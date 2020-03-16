@@ -18,5 +18,5 @@ Output will be placed in the same directory as "assignments.csv" and "yields.csv
 4. REST API endpoints defined under root (i.e. /api/v1/):
     - /loans/{loan_id} -- POST assign loan to facility id (provided in JSON payload), GET for status query
     - /facilities/{facility_id} - GET provides capacity
-5. For batch assignments the loans could be ordered with the largest first. Similarly to memory fragmentation problem, smaller chunks are easier to allocate than larger ones.
+5. For batch assignments the loans could be ordered with the largest first. Similar to memory fragmentation problem, smaller chunks are easier to allocate than larger ones.
 6. Run-time complexity of the loan assignment portion is O(facilities * covenants), a.k.a "atrocious." To optimize, both facilities and covenants have to be ordered by fields which are most important for the assignment algorithm.
